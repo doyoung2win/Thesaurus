@@ -11,6 +11,10 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBAction func showSynonym(_ sender: Any) {
+        guard let userInput = textField.text else {
+            return
+        }
+        synonyms(userInput)
     }
     
     @IBOutlet weak var textField: UITextField!
