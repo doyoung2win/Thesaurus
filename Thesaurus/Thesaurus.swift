@@ -15,6 +15,6 @@ func synonyms(_ input: String) {
     if let wordSynonym = synonyms[input] {
         print(wordSynonym)
     } else {
-        return("Sorry I only have a few words in my thesaurus!  Some of these include swift, objective, calculate and create.")
+        print("Sorry I only have a few words in my thesaurus!  Some of these include swift, objective, calculate and create.")
     }
 }
