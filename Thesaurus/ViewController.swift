@@ -14,9 +14,7 @@ class ViewController: UIViewController {
         guard let userInput = textField.text else {
             return
         }
-        let printOut = synonyms(userInput)
-        let printOutString = "\(printOut)"
-        textView.text = printOutString
+        textView.text = print(synonyms(userInput))
     }
     
     @IBOutlet weak var textField: UITextField!
